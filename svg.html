@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="menu-container">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="svg.html">SVG</a></li>
+            <li><a href="credits.html">Credits</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Animated SVGs and Visualization</h1>
+        <h3> Try clicking on the shapes and see what happens! </h3>
+
+        <svg width="100" height="100" id="animated-circle" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="40" fill="red" stroke="black" stroke-width="3">
+                <animate attributeName="r" from="10" to="40" dur="1s" repeatCount="indefinite" />
+            </circle>
+        </svg>
+        
+        <svg width="150" height="100" id="animated-triangle" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="50,10 10,90 90,90" fill="green" stroke="black" stroke-width="3">
+                <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0 0; 50 0; 0 0" dur="2s" repeatCount="indefinite" />
+            </polygon>
+        </svg>
+        
+        <svg width="150" height="100" id="animated-square" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="80" height="80" fill="purple" stroke="black" stroke-width="3">
+                <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0 0; 50 0; 0 0" dur="2s" repeatCount="indefinite" />
+            </rect>
+        </svg>          
+    </div>
+    <br>
+    <br>
+    <div class="image-text-container">
+        <img src="images/ny_times_graph.png" alt="Image" class="content-image" width="800" height="500">
+
+        <p> 
+            The above graph shows the fluctuation of Consumer Price Index (indicating inflation rises and decreases) throughout the years from 1967 up until February 2024. <br>
+            Graphs like these are produced from Time-series analysis problems and provide analysts with some valuable insights on information that changes with time. <br>
+            What I liked about it was that it can provide economists with useful information on how inflation will fluctuate in the upcoming monhts <br>
+            and data scientists can also predict upcoming inflation percentages by feeding Time-series driven ML models with current data used in this visualization. 
+        </p>
+    </div>
+    
+
+    
+
+    <footer>
+        &copy; 2024 by Dimitris Tsiompikas, UoA
+    </footer>
+    <script src="js/functions.js"></script>
+</body>
+</html>
