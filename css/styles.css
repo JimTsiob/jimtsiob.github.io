@@ -125,3 +125,16 @@ svg {
     font-size: 20px;
     text-align: center;
 }
+
+.paper-text-box {
+    background-color: #ff9800;
+    padding: 10px;
+    color: white;    
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
